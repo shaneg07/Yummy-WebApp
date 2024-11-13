@@ -9,24 +9,47 @@
 
     </head>
     <body style = "background-color: antiquewhite;">
-        <form> <!--how do i get this into a box-->
-            <div class="mb-3">
-              <label for="email_id" class="form-label">Email Address</label>
-              <input type="email" class="form-control" id="email_id" aria-describedby="emailHelp"> <!-- whats aria? -->
-              <div id="note" class="form-text">Enter a valid Email ID</div>
+      <div class="mask d-flex align-items-center h-100 gradient-custom-3" style="padding-top: 3%;">
+        <div class="container h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-9 col-lg-7 col-xl-8">
+              <div class="card" style="border-radius: 15px;">
+                <div class="card-body p-5">
+                  <form> <!--how do i get this into a box-->
+                      <div class="mb-5">
+                        <label for="email_id" class="form-label">User Name</label>
+                        <input type="email" class="form-control" id="email_id" aria-describedby="emailHelp"> <!-- whats aria? -->
+                        <div id="note" class="form-text">Select a username</div>
+                      </div>
+                      <div class="mb-5">
+                        <label for="email_id" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email_id" aria-describedby="emailHelp"> <!-- whats aria? -->
+                        <div id="note" class="form-text">Enter a valid Email ID</div>
+                      </div>
+                      <div class="mb-5">
+                        <label for="password_id" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password_id">
+                        <div id="note" class="form-text">Password should be atleast 8 characters long, must be alpha-numeric and contains (! , _ -)</div>
+                      </div>
+                      <div class="mb-5">
+                        <label for="password_id" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="password_id">
+                        <div id="note" class="form-text">Retype Your Password</div>
+                      </div>
+                      <div class="mb-5 form-check">
+                        <input type="checkbox" class="form-check-input" id="rmrcheck">
+                        <label class="form-check-label" for="rmrcheck">Remember Me</label>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                    <div style="padding-top: 10px;">
+                      <a class="btn btn-secondary" href = "index.html">Go Back</a>
+                    </div>
+                </div>
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="password_id" class="form-label">Password</label>
-              <input type="password" class="form-control" id="password_id">
-              <div id="note" class="form-text">Password should be atleast 8 characters long, must be alpha-numeric and contains (! , _ -)</div>
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="rmrcheck">
-              <label class="form-check-label" for="rmrcheck">Remember Me</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-
-          <a href="index.html" class="button">Go Back</a>
+          </div>
+        </div>
+      </div>
     </body>
 </html> 
